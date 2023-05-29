@@ -1,9 +1,11 @@
 import math
-print("Select an opretion to perform: ")
+print("Select an opretion to perform: 1-6")
 print("1.ADD")
 print("2.SUBTRACT")
 print("3.MULTIPLY")
 print("4.DIVIDE")
+print("5.SQUARE ROOT")
+print("6.RAISE TO POWER")
 
 operation = input()
 
@@ -27,5 +29,14 @@ elif operation == "4":
         num1 = input("Enter first number: ")
         num2 = input("Enter second number: ")
         print("Result " + str(int(num1) / int(num2)))
+elif operation == "5":
+        #code for SQUARE ROOT
+        num = int(input("Enter number: "))
+       
+        print("The squareroot is %f " %(math.sqrt(num)))
+elif operation == "6":
+        #code for RAISE TO POWER
+        num = int(input("Enter number: "))
+        print("The Result is %d" %(pow(num, 2) ))
 else:
         print("Invalid Entry")    
